@@ -95,7 +95,7 @@ local function part2(allLines)
 	return sum
 end
 
-io.input("input.txt")
+io.input("input/input01.txt")
 local allLines = {}
 local i = 1
 local nextLine = io.read("*line")

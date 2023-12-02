@@ -1,2 +1,6 @@
 # Ignore input
 *.txt
+input/
+
+# Ignore VS Code files
+.vscode/

@@ -34,7 +34,7 @@ local function part2(allLines)
 	return totalScore
 end
 
-io.input("input.txt")
+io.input("input/input02.txt")
 local allLines = {}
 local i = 1
 local nextLine = io.read("*line")
