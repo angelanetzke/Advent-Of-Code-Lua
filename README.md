@@ -1,3 +1,3 @@
 # Advent Of Code (Lua)
 
-Theses are my Lua solutions for [Advent of Code](https://adventofcode.com/), an annual set of programming challenges.
+Theses are my Lua solutions for [Advent of Code](https://adventofcode.com/), an annual set of programming challenges. I used VS Code as my IDE.
