@@ -1,4 +1,4 @@
-IntComputer = {}
+local IntComputer = {}
 
 function IntComputer:new(o, initialValues)
 	o = o or {}

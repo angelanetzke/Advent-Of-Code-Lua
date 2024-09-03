@@ -1,4 +1,4 @@
-Intersections = {}
+local intersections = {}
 
 local function getPointString(x, y)
 	return string.format("%05d", x) .. "," .. string.format("%05d", y)
@@ -54,11 +54,11 @@ local function part1(allLines)
 	end
 	for key, value in pairs(points) do
 		if value == 2 then
-			Intersections[#Intersections + 1] = key
+			intersections[#intersections + 1] = key
 		end
 	end
 	local closestDistance = -1
-	for _, thisPoint in ipairs(Intersections) do
+	for _, thisPoint in ipairs(intersections) do
 		local temp = {}
 		for token in string.gmatch(thisPoint, "[^,]+") do
 			temp[#temp + 1] = token
@@ -100,7 +100,7 @@ local function part2(allLines)
 				x = x + 1
 			end
 			stepCount = stepCount + 1
-			for _, thisPoint in ipairs(Intersections) do
+			for _, thisPoint in ipairs(intersections) do
 				if thisPoint == getPointString(x, y) then
 					distances[thisPoint] = {stepCount, 0}
 				end
@@ -124,7 +124,7 @@ local function part2(allLines)
 				x = x + 1
 			end
 			stepCount = stepCount + 1
-			for _, thisPoint in ipairs(Intersections) do
+			for _, thisPoint in ipairs(intersections) do
 				if thisPoint == getPointString(x, y) then
 					distances[thisPoint][2] = stepCount
 				end
