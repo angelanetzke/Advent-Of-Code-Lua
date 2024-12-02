@@ -37,8 +37,8 @@ local leftList = {}
 local rightList = {}
 for i = 1, #allLines do
 	local _, _, left, right = string.find(allLines[i], "(%d+) +(%d+)")
-	leftList[i] = left
-	rightList[i] = right
+	leftList[i] = tonumber(left)
+	rightList[i] = tonumber(right)
 end
 table.sort(leftList)
 table.sort(rightList)
